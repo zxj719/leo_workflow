@@ -1,8 +1,9 @@
 # leo_workflow
 Records of my work in Ubuntu for leo rover development.
 
-## How to use github
-Following steps will only happen once for setting up. Install git
+## 1. How to use github
+### Following steps will only happen once for setting up.
+Install git
 ```bash
 sudo apt install git
 ```
@@ -24,7 +25,7 @@ Open your github website(make sure you have signed up), click the right top butt
 ssh -T git@github.com
 ```
 
-And the followings may happen all the day.
+### And the followings may happen all the day.
 Now, git your local repository. In your target directory, which the one you want to upload to the github,
 ```bash
 git init
