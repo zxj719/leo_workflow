@@ -14,9 +14,9 @@ git config --global user.name "ZXJ"
 ```
 Connect your computer with your github with SSH. We have to generate a pair of keys. private one and public one
 ```bash
-ssh-key-gen -t rsa
+ssh-keygen -t rsa
 ```
-then, open and copy the public one
+After three times pressing Enter, then, open and copy the public one
 ```bash
 vim ~/.ssh/id_rsa.pub
 ```
