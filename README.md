@@ -69,7 +69,7 @@ and you can switch to that one by
 ```bash
 git checkout <branch name>
 ```
-you can create and switch to a new branch by
+Also, you can create and switch to a new branch by
 ```bash
 git checkout -b <branch name>
 ```
