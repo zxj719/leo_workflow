@@ -51,6 +51,11 @@ Now, we can upload, or 'push' our local files
 git push -u origin master
 ```
 Now you can find your files in your github project 'master' branch.
+For updating the github, pull first
+```bash
+git pull origin master
+```
+And then push the staged files in order to avoid the version conflict.
 
 Also, you can remove the origin SSH connection so that you can conncet to another remote repo.
 ```bash
@@ -64,6 +69,11 @@ and you can switch to that one by
 ```bash
 git checkout <branch name>
 ```
+you can create and switch to a new branch by
+```bash
+git checkout -b <branch name>
+```
+
 suddenly you want to remove it
 ```bash
 git branch -D
