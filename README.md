@@ -25,7 +25,7 @@ Open your github website(make sure you have signed up), click the right top butt
 ssh -T git@github.com
 ```
 
-### And the followings may happen all the day.
+### New a local repo and upload.
 Now, git your local repository. In your target directory, which the one you want to upload to the github,
 ```bash
 git init
@@ -51,12 +51,23 @@ Now, we can upload, or 'push' our local files
 git push -u origin master
 ```
 Now you can find your files in your github project 'master' branch.
+
+### Update the repo in github
 For updating the github, pull first
 ```bash
 git pull origin master
 ```
-And then push the staged files in order to avoid the version conflict.
+or merge the branch from github,
+```bash
+git merge origin/<branch name>
+```
 
+And then push the staged files in order to avoid the version conflict.
+```bash
+git push -u origin <branch name>
+```
+
+### Others
 Also, you can remove the origin SSH connection so that you can conncet to another remote repo.
 ```bash
 git remote remove origin
@@ -73,11 +84,12 @@ Also, you can create and switch to a new branch by
 ```bash
 git checkout -b <branch name>
 ```
-
 suddenly you want to remove it
 ```bash
 git branch -D
 ```
+
+### Something you may want to do before everything starts
 to check the branch you can
 ```bash
 git branch
